@@ -1,41 +1,26 @@
-import { Users, Clock, ThumbsUp, Wrench, Heart, Shield } from "lucide-react";
+import { ShieldCheck, Cpu, BadgeCheck } from "lucide-react";
 
 const Differentials = () => {
   const differentials = [
     {
-      icon: Users,
-      title: "Empresa Familiar",
-      description: "Empresa familiar sólida, de propriedade da fundadora original, com continuidade entre gerações.",
+      icon: ShieldCheck,
+      title: "Tradição e Honestidade",
+      description:
+        "Com mais de 35 anos de história em Matão, a Center Som Júnior preza pela transparência total, com diagnósticos claros e orçamentos justos antes de qualquer reparo.",
       highlight: true,
     },
     {
-      icon: Clock,
-      title: "35+ Anos de Mercado",
-      description: "Experiência consolidada ao longo de mais de três décadas servindo Matão e região.",
+      icon: Cpu,
+      title: "Especialização Técnica",
+      description:
+        "A equipe conta com técnicos experientes e em constante atualização, unindo décadas de prática às novas tecnologias de smartphones e eletrônicos.",
       highlight: false,
     },
     {
-      icon: ThumbsUp,
-      title: "Confiança Garantida",
-      description: "Serviço honesto e transparente. Diagnóstico claro antes de qualquer reparo.",
-      highlight: false,
-    },
-    {
-      icon: Wrench,
-      title: "Técnicos Especializados",
-      description: "Equipe qualificada e sempre atualizada com as novas tecnologias do mercado.",
-      highlight: false,
-    },
-    {
-      icon: Heart,
-      title: "Atendimento Próximo",
-      description: "Atendimento próximo, com orientação clara e atenção aos detalhes em cada etapa.",
-      highlight: true,
-    },
-    {
-      icon: Shield,
-      title: "Garantia nos Serviços",
-      description: "Todo serviço realizado possui garantia. A tranquilidade do cliente é prioridade.",
+      icon: BadgeCheck,
+      title: "Garantia e Agilidade",
+      description:
+        "A Center Som Júnior entende a importância do aparelho no dia a dia. Por isso, trabalha com peças de alta qualidade e oferece garantia real em todos os serviços realizados.",
       highlight: false,
     },
   ];
@@ -52,7 +37,7 @@ const Differentials = () => {
             Diferenciais
           </h2>
           <p className="text-lg text-muted-foreground">
-            O que faz a Center Som Jr ser a escolha de tantas famílias em Matão há mais de 35 anos.
+            O que faz a Center Som Júnior ser a escolha de tantas famílias em Matão há mais de 35 anos.
           </p>
         </div>
 
@@ -108,13 +93,13 @@ const Differentials = () => {
           ))}
         </div>
 
-        {/* Testimonial/Quote Section */}
+        {/* Quote */}
         <div className="mt-16 text-center">
           <div className="inline-block p-8 md:p-12 rounded-3xl bg-gradient-to-br from-primary/5 to-secondary/10 border border-border max-w-3xl">
             <blockquote className="font-display text-xl md:text-2xl text-foreground italic mb-4">
-              "Na Center Som Jr, cada atendimento é conduzido com respeito e transparência — um padrão mantido há mais de 35 anos."
+              "Cada atendimento é conduzido com respeito e transparência — um padrão mantido há mais de 35 anos."
             </blockquote>
-            <p className="text-muted-foreground">— Center Som Jr</p>
+            <p className="text-muted-foreground">— Center Som Júnior</p>
           </div>
         </div>
       </div>

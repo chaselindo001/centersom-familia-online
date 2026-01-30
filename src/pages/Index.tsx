@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import BeforeAfter from "@/components/BeforeAfter";
 import Differentials from "@/components/Differentials";
+import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import WhatsAppFloatingButton from "@/components/WhatsAppFloatingButton";
@@ -18,6 +19,7 @@ const Index = () => {
         <Services />
         <BeforeAfter />
         <Differentials />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
