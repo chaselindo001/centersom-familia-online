@@ -62,16 +62,8 @@ const About = () => {
           {/* Story Text */}
           <div className="space-y-6">
             <p className="text-lg text-foreground leading-relaxed">
-              A <strong className="text-primary">Center Som Jr</strong> é uma empresa familiar com tradição e foco em assistência técnica.
-              Fundada com valores tradicionais, mantém um padrão de atendimento técnico e honesto construído ao longo de décadas.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              A Center Som Júnior é uma empresa familiar sólida, de propriedade de sua fundadora original (avó).
-              A equipe une a experiência técnica de dois irmãos (pai e tio) ao dinamismo de seus dois netos e colaboradores especializados.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              O compromisso é oferecer serviço de qualidade, com preços justos e diagnóstico claro antes de qualquer reparo.
-              Cada aparelho é tratado com atenção e responsabilidade, do recebimento à entrega.
+              Fundada por <strong className="text-primary">Dona Maria</strong> em 1989, a <strong className="text-primary">Center Som Júnior</strong> mantém sua essência familiar e sólida.
+              Hoje, a operação é liderada por seus filhos, Anderson e Junior, unindo tradição e inovação com a colaboração dos netos da fundadora e uma equipe especializada de colaboradores, incluindo profissionais com e sem vínculos familiares.
             </p>
             <div className="pt-4">
               <div className="flex items-center gap-4 text-sm">
