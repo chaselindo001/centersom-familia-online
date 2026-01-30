@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WHATSAPP_URL } from "@/lib/companyInfo";
+import logoTazmania from "@/assets/logo-tazmania.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +35,12 @@ const Header = () => {
             className="flex items-center gap-2"
           >
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-lg">CS</span>
+              <img
+                src={logoTazmania}
+                alt="Logo da Center Som Júnior"
+                className="w-8 h-8 object-contain"
+                loading="eager"
+              />
             </div>
             <div className="hidden sm:block">
               <span className="font-display font-semibold text-lg text-foreground">Center Som Júnior</span>

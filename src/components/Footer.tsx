@@ -1,5 +1,6 @@
 import { MapPin, Phone, Clock, Heart } from "lucide-react";
 import { COMPANY, WHATSAPP_URL } from "@/lib/companyInfo";
+import logoTazmania from "@/assets/logo-tazmania.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,7 +14,12 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center">
-                <span className="font-display font-bold text-xl text-secondary-foreground">CS</span>
+                 <img
+                   src={logoTazmania}
+                   alt="Logo da Center Som Júnior"
+                   className="w-10 h-10 object-contain"
+                   loading="lazy"
+                 />
               </div>
               <div>
                 <h3 className="font-display text-xl font-bold">{COMPANY.name}</h3>
