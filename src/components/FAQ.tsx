@@ -3,16 +3,16 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const FAQ = () => {
   const items = [
     {
-      q: "Quanto tempo demora o conserto de um celular?",
-      a: "A maioria dos reparos de tela e bateria é realizada no mesmo dia. Para reparos complexos em placas, é informado um prazo detalhado após a análise técnica.",
+      q: "Minha TV tem som, mas a imagem sumiu. Tem conserto?",
+      a: "Sim. Este é um problema comum em muitos modelos. É realizada a substituição técnica de componentes e barramentos de LED, com peças de alta qualidade, para devolver a imagem original ao televisor.",
     },
     {
-      q: "Vocês dão orçamento sem compromisso?",
-      a: "Sim. É realizada uma análise prévia do aparelho para identificação do defeito e o orçamento é apresentado para aprovação antes do início do serviço.",
+      q: "O controle do meu carro parou de funcionar ou o alarme está disparando. Vocês resolvem?",
+      a: "Com certeza. A Center Som Júnior é especializada em reparos de controles de carro, alarmes e sistemas de travas elétricas. O serviço inclui desde a troca de carcaças e baterias até a configuração do sistema.",
     },
     {
-      q: "Atendem apenas Matão?",
-      a: "O atendimento abrange Matão e região, com suporte para eletrônicos residenciais e sistemas automotivos.",
+      q: "Como funciona o orçamento para eletrônicos e som?",
+      a: "O aparelho ou controle pode ser levado até a loja na Rua Sinharinha Frota. É realizada uma análise técnica detalhada e o valor é informado para aprovação antes de qualquer execução.",
     },
   ];
 
