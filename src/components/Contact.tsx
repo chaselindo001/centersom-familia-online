@@ -25,8 +25,8 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Horário de Funcionamento",
-      primary: "Segunda a Sexta: 8h às 18h",
-      secondary: "Sábado: 8h às 12h",
+      primary: "Segunda a Sexta: 08:00 às 18:00",
+      secondary: "Sábado: 08:00 às 12:00",
     },
   ];
 

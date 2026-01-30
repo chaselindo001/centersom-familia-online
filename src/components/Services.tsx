@@ -18,7 +18,7 @@ const Services = () => {
     { icon: Microwave, name: "Micro-ondas", description: "Reparo completo de fornos micro-ondas" },
     { icon: Gamepad2, name: "Videogames", description: "Manutenção de consoles e controles" },
     { icon: Speaker, name: "Aparelhos de Som", description: "Conserto de caixas de som e sistemas de áudio" },
-    { icon: Radio, name: "Rádios Automotivos", description: "Reparo de rádios originais de fábrica" },
+    { icon: Radio, name: "Rádios Automotivos e Multimídias", description: "Reparo de sistemas originais de fábrica" },
     { icon: Smartphone, name: "Smartphones", description: "Reparos avançados em Android e iOS, telas e placas" },
   ];
 
