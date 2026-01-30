@@ -1,5 +1,5 @@
 import { MapPin, Phone, Clock, Heart } from "lucide-react";
-import { COMPANY, buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
+import { COMPANY, WHATSAPP_URL } from "@/lib/companyInfo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a 
-                href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+                href={WHATSAPP_URL}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 hover:bg-secondary flex items-center justify-center transition-colors group"

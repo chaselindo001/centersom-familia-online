@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
+import { WHATSAPP_URL } from "@/lib/companyInfo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,7 +59,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+              href={WHATSAPP_URL}
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -96,7 +96,7 @@ const Header = () => {
               </a>
             ))}
             <a 
-              href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+              href={WHATSAPP_URL}
               target="_blank" 
               rel="noopener noreferrer"
               className="mt-2"

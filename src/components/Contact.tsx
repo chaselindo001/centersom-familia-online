@@ -1,6 +1,6 @@
 import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { COMPANY, buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
+import { COMPANY, WHATSAPP_URL } from "@/lib/companyInfo";
 
 const Contact = () => {
   const contactInfo = [
@@ -89,7 +89,7 @@ const Contact = () => {
             {/* CTA Buttons */}
             <div className="space-y-4 pt-4">
               <a 
-                href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+                href={WHATSAPP_URL}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block"
