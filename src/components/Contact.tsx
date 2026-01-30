@@ -121,8 +121,8 @@ const Contact = () => {
             {/* Additional Info */}
             <div className="p-6 rounded-2xl bg-secondary/10 border border-secondary/20">
               <p className="text-sm text-foreground">
-                <strong>Dica:</strong> Tire uma foto do problema/aparelho e envie pelo WhatsApp.
-                Isso ajuda a equipe a orientar melhor antes da visita.
+                <strong>Dica:</strong> O envio de uma foto do problema/aparelho pelo WhatsApp
+                ajuda a equipe a orientar melhor antes da visita.
               </p>
             </div>
           </div>

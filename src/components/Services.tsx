@@ -14,19 +14,19 @@ import { WHATSAPP_URL } from "@/lib/companyInfo";
 
 const Services = () => {
   const electronicsServices = [
-    { icon: Tv, name: "TVs", description: "Conserto de televisores de todas as marcas e tamanhos" },
+    { icon: Tv, name: "TVs", description: "Manutenção em LED/LCD e Smart TVs com diagnóstico preciso" },
     { icon: Microwave, name: "Micro-ondas", description: "Reparo completo de fornos micro-ondas" },
     { icon: Gamepad2, name: "Videogames", description: "Manutenção de consoles e controles" },
     { icon: Speaker, name: "Aparelhos de Som", description: "Conserto de caixas de som e sistemas de áudio" },
     { icon: Radio, name: "Rádios Automotivos", description: "Reparo de rádios originais de fábrica" },
-    { icon: Smartphone, name: "Celulares", description: "Conserto de smartphones e tablets" },
+    { icon: Smartphone, name: "Smartphones", description: "Reparos avançados em Android e iOS, telas e placas" },
   ];
 
   const automotiveServices = [
     { icon: Shield, name: "Alarmes", description: "Instalação e conserto de sistemas de alarme" },
     { icon: Car, name: "Vidros Elétricos", description: "Instalação e reparo de vidros elétricos" },
     { icon: CircuitBoard, name: "Controles Originais", description: "Programação de controles de alarme originais" },
-    { icon: Volume2, name: "Módulos de Som", description: "Reparo e instalação de módulos automotivos" },
+    { icon: Volume2, name: "Som e Auto", description: "Instalação de som automotivo, alarmes e controles de carro" },
   ];
 
   return (
@@ -62,7 +62,7 @@ const Services = () => {
             {electronicsServices.map((service, index) => (
               <div 
                 key={service.name}
-                className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-card transition-all duration-300"
+                className="group p-6 rounded-2xl bg-card border border-border shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-300"
               >
                 <div className="flex items-start gap-4">
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
@@ -98,7 +98,7 @@ const Services = () => {
             {automotiveServices.map((service, index) => (
               <div 
                 key={service.name}
-                className="group p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-border hover:border-secondary/30 hover:shadow-card transition-all duration-300"
+                className="group p-6 rounded-2xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-border shadow-soft hover:border-secondary/30 hover:shadow-card transition-all duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4 group-hover:bg-secondary/20 transition-colors">
                   <service.icon className="w-6 h-6 text-secondary" />

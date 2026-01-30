@@ -22,7 +22,7 @@ const Footer = () => {
                  />
               </div>
               <div>
-                <h3 className="font-display text-xl font-bold">{COMPANY.name}</h3>
+                <h3 className="font-brand text-xl font-bold tracking-tight text-secondary">{COMPANY.name}</h3>
                 <p className="text-sm text-primary-foreground/70">Desde {COMPANY.foundationYear}</p>
               </div>
             </div>

@@ -51,7 +51,10 @@ const Hero = () => {
               </Button>
             </a>
             <a href="#servicos">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8"
+              >
                 Ver Serviços
               </Button>
             </a>

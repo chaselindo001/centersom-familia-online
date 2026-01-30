@@ -66,9 +66,8 @@ const About = () => {
               Fundada com valores tradicionais, mantém um padrão de atendimento técnico e honesto construído ao longo de décadas.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              A propriedade permanece com a fundadora original (matriarca), e a continuidade do trabalho é garantida por uma equipe
-              que une gerações: dois irmãos experientes na área técnica e dois netos que trazem dinamismo à operação.
-              Complementando esse núcleo, a empresa conta com colaboradores contratados e qualificados.
+              A Center Som Júnior é uma empresa familiar sólida, de propriedade de sua fundadora original (avó).
+              A equipe une a experiência técnica de dois irmãos (pai e tio) ao dinamismo de seus dois netos e colaboradores especializados.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               O compromisso é oferecer serviço de qualidade, com preços justos e diagnóstico claro antes de qualquer reparo.
