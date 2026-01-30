@@ -43,7 +43,7 @@ const Header = () => {
               />
             </div>
             <div className="hidden sm:block">
-              <span className="font-display font-semibold text-lg text-foreground">Center Som Júnior</span>
+              <span className="font-brand font-bold tracking-tight text-lg text-secondary">Center Som Júnior</span>
               <p className="text-xs text-muted-foreground -mt-1">Desde 1989</p>
             </div>
           </a>

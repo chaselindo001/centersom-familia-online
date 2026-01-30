@@ -5,7 +5,7 @@ const Differentials = () => {
     {
       icon: Users,
       title: "Empresa Familiar",
-      description: "Empresa familiar sólida, com atendimento acolhedor e foco em relacionamento de longo prazo.",
+      description: "Empresa familiar sólida, de propriedade da fundadora original, com continuidade entre gerações.",
       highlight: true,
     },
     {
@@ -64,7 +64,7 @@ const Differentials = () => {
               className={`group relative p-8 rounded-2xl transition-all duration-300 ${
                 item.highlight 
                   ? "bg-primary text-primary-foreground shadow-elevated" 
-                  : "bg-card border border-border hover:shadow-card"
+                  : "bg-card border border-border shadow-soft hover:shadow-card"
               }`}
             >
               {/* Icon */}
