@@ -1,7 +1,7 @@
 import { Phone, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-storefront.jpg";
-import { COMPANY, buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
+import { COMPANY, WHATSAPP_URL } from "@/lib/companyInfo";
 
 const Hero = () => {
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <a
-              href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
             >

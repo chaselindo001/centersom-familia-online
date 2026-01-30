@@ -18,6 +18,10 @@ export const COMPANY = {
 export const DEFAULT_WHATSAPP_MESSAGE =
   "Olá! Vim pelo site da Center Som Júnior e gostaria de um orçamento.";
 
+// Link universal solicitado (mantido como texto “humano”; o browser fará a codificação necessária).
+export const WHATSAPP_URL =
+  "https://wa.me/5516991093580?text=Olá! Vim pelo site da Center Som Júnior e gostaria de um orçamento.";
+
 export function buildWhatsAppUrl(message?: string) {
   const base = `https://wa.me/${COMPANY.phones.whatsappWaMe}`;
   if (!message) return base;

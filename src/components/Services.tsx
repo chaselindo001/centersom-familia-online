@@ -10,7 +10,7 @@ import {
   CircuitBoard,
   Volume2
 } from "lucide-react";
-import { buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
+import { WHATSAPP_URL } from "@/lib/companyInfo";
 
 const Services = () => {
   const electronicsServices = [
@@ -123,7 +123,7 @@ const Services = () => {
             O atendimento pelo WhatsApp facilita o orçamento e a avaliação do aparelho.
           </p>
           <a 
-            href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
+            href={WHATSAPP_URL}
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold rounded-lg transition-colors"
