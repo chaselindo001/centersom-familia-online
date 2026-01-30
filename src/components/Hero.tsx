@@ -1,6 +1,7 @@
 import { Phone, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-workshop.jpg";
+import heroImage from "@/assets/hero-storefront.jpg";
+import { COMPANY, buildWhatsAppUrl } from "@/lib/companyInfo";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
-          alt="Oficina Center Som Jr" 
+          alt="Fachada da Center Som Júnior" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/85 to-primary/70" />
@@ -21,24 +22,31 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-secondary/20 backdrop-blur-sm border border-secondary/30 rounded-full px-4 py-2 mb-6 animate-fade-in">
             <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
-            <span className="text-sm text-primary-foreground/90">Empresa Familiar desde 1989</span>
+            <span className="text-sm text-primary-foreground/90">Empresa familiar desde {COMPANY.foundationYear}</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Mais de 35 anos 
-            <span className="block text-secondary">cuidando do que é seu</span>
+            Mais de 35 anos
+            <span className="block text-secondary">consertando com confiança</span>
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            A Center Som Jr é uma empresa familiar de Matão-SP, especializada em conserto de 
-            eletrodomésticos, eletrônicos e serviços automotivos. Atendimento próximo e de confiança.
+            A {COMPANY.name} é referência em assistência técnica e manutenção de eletrônicos,
+            com foco em <strong>televisores</strong>, <strong>som automotivo</strong> e aparelhos de <strong>áudio e vídeo</strong>.
+            Atendimento claro, profissional e acolhedor.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <a href="https://wa.me/5516999999999" target="_blank" rel="noopener noreferrer">
+            <a
+              href={buildWhatsAppUrl(
+                "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2 text-base px-8">
                 <Phone className="w-5 h-5" />
                 Chamar no WhatsApp
@@ -77,7 +85,7 @@ const Hero = () => {
               </div>
               <div>
                 <p className="text-sm font-medium text-primary-foreground">WhatsApp</p>
-                <p className="text-xs text-primary-foreground/60">Resposta rápida</p>
+                <p className="text-xs text-primary-foreground/60">{COMPANY.phones.whatsappLabel}</p>
               </div>
             </div>
           </div>

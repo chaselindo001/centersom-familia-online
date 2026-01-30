@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { buildWhatsAppUrl } from "@/lib/companyInfo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,6 +10,7 @@ const Header = () => {
     { href: "#home", label: "Início" },
     { href: "#sobre", label: "Sobre Nós" },
     { href: "#servicos", label: "Serviços" },
+    { href: "#antes-depois", label: "Antes e Depois" },
     { href: "#diferenciais", label: "Diferenciais" },
     { href: "#contato", label: "Contato" },
   ];
@@ -35,7 +37,7 @@ const Header = () => {
               <span className="text-primary-foreground font-display font-bold text-lg">CS</span>
             </div>
             <div className="hidden sm:block">
-              <span className="font-display font-semibold text-lg text-foreground">Center Som Jr</span>
+              <span className="font-display font-semibold text-lg text-foreground">Center Som Júnior</span>
               <p className="text-xs text-muted-foreground -mt-1">Desde 1989</p>
             </div>
           </a>
@@ -57,7 +59,9 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="https://wa.me/5516999999999" 
+              href={buildWhatsAppUrl(
+                "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
+              )}
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -94,7 +98,9 @@ const Header = () => {
               </a>
             ))}
             <a 
-              href="https://wa.me/5516999999999" 
+              href={buildWhatsAppUrl(
+                "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
+              )}
               target="_blank" 
               rel="noopener noreferrer"
               className="mt-2"

@@ -1,19 +1,26 @@
 import { MapPin, Phone, Clock, MessageCircle, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { COMPANY, buildWhatsAppUrl } from "@/lib/companyInfo";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
       title: "Endereço",
-      primary: "Rua Sinharinha Frota, 2115",
-      secondary: "Jardim Buscardi, Matão - SP",
+      primary: COMPANY.address.street,
+      secondary: COMPANY.address.districtCityState,
     },
     {
       icon: Phone,
-      title: "Telefone",
-      primary: "(16) 9999-9999",
-      secondary: "Ligue ou mande mensagem",
+      title: "Telefone Fixo",
+      primary: COMPANY.phones.landlineLabel,
+      secondary: "Atendimento em horário comercial",
+    },
+    {
+      icon: MessageCircle,
+      title: "WhatsApp",
+      primary: COMPANY.phones.whatsappLabel,
+      secondary: "Orçamentos e dúvidas rápidas",
     },
     {
       icon: Clock,
@@ -82,14 +89,16 @@ const Contact = () => {
             {/* CTA Buttons */}
             <div className="space-y-4 pt-4">
               <a 
-                href="https://wa.me/5516999999999?text=Olá! Gostaria de saber mais sobre os serviços da Center Som Jr." 
+                href={buildWhatsAppUrl(
+                  "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
+                )}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block"
               >
                 <Button 
                   size="lg" 
-                  className="w-full bg-[#25D366] hover:bg-[#25D366]/90 text-white gap-3 text-base py-6"
+                  className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-3 text-base py-6"
                 >
                   <MessageCircle className="w-5 h-5" />
                   Chamar no WhatsApp
@@ -97,7 +106,7 @@ const Contact = () => {
               </a>
               
               <a 
-                href="tel:+5516999999999"
+                href={`tel:${COMPANY.phones.landlineTel}`}
                 className="block"
               >
                 <Button 
@@ -106,7 +115,7 @@ const Contact = () => {
                   className="w-full gap-3 text-base py-6"
                 >
                   <Phone className="w-5 h-5" />
-                  Ligar Agora
+                    Ligar no Fixo
                 </Button>
               </a>
             </div>
@@ -114,8 +123,8 @@ const Contact = () => {
             {/* Additional Info */}
             <div className="p-6 rounded-2xl bg-secondary/10 border border-secondary/20">
               <p className="text-sm text-foreground">
-                <strong>💡 Dica:</strong> Tire uma foto do problema ou do aparelho e 
-                envie pelo WhatsApp. Assim podemos fazer uma avaliação prévia mais rápida!
+                <strong>Dica:</strong> Tire uma foto do problema/aparelho e envie pelo WhatsApp.
+                Isso ajuda a gente a orientar melhor antes da visita.
               </p>
             </div>
           </div>
