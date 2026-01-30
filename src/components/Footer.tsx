@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, Heart } from "lucide-react";
+import { COMPANY, buildWhatsAppUrl } from "@/lib/companyInfo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,8 +16,8 @@ const Footer = () => {
                 <span className="font-display font-bold text-xl text-secondary-foreground">CS</span>
               </div>
               <div>
-                <h3 className="font-display text-xl font-bold">Center Som Jr</h3>
-                <p className="text-sm text-primary-foreground/70">Desde 1989</p>
+                <h3 className="font-display text-xl font-bold">{COMPANY.name}</h3>
+                <p className="text-sm text-primary-foreground/70">Desde {COMPANY.foundationYear}</p>
               </div>
             </div>
             <p className="text-primary-foreground/80 max-w-md mb-6">
@@ -25,7 +26,9 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a 
-                href="https://wa.me/5516999999999" 
+                href={buildWhatsAppUrl(
+                  "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
+                )}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 hover:bg-secondary flex items-center justify-center transition-colors group"
@@ -46,6 +49,7 @@ const Footer = () => {
                 { href: "#home", label: "Início" },
                 { href: "#sobre", label: "Sobre Nós" },
                 { href: "#servicos", label: "Serviços" },
+                { href: "#antes-depois", label: "Antes e Depois" },
                 { href: "#diferenciais", label: "Diferenciais" },
                 { href: "#contato", label: "Contato" },
               ].map((link) => (
@@ -68,13 +72,15 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary shrink-0 mt-0.5" />
                 <span className="text-primary-foreground/80 text-sm">
-                  Rua Sinharinha Frota, 2115<br />
-                  Jd. Buscardi, Matão - SP
+                  {COMPANY.address.street}<br />
+                  {COMPANY.address.districtCityState}
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-secondary shrink-0" />
-                <span className="text-primary-foreground/80 text-sm">(16) 9999-9999</span>
+                <span className="text-primary-foreground/80 text-sm">
+                  {COMPANY.phones.landlineLabel} • {COMPANY.phones.whatsappLabel}
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-secondary shrink-0 mt-0.5" />

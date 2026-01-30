@@ -36,7 +36,7 @@ const About = () => {
             Uma história de família e dedicação
           </h2>
           <p className="text-lg text-muted-foreground">
-            Fundada em 24 de abril de 1989, a Center Som Jr nasceu do sonho de uma família 
+            Fundada em 18 de abril de 1989, a Center Som Jr nasceu do sonho de uma família 
             em oferecer serviços de qualidade para a comunidade de Matão-SP.
           </p>
         </div>

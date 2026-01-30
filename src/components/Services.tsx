@@ -10,6 +10,7 @@ import {
   CircuitBoard,
   Volume2
 } from "lucide-react";
+import { buildWhatsAppUrl } from "@/lib/companyInfo";
 
 const Services = () => {
   const electronicsServices = [
@@ -123,7 +124,9 @@ const Services = () => {
             podemos avaliar seu caso.
           </p>
           <a 
-            href="https://wa.me/5516999999999" 
+            href={buildWhatsAppUrl(
+              "Olá! Gostaria de saber se vocês atendem este aparelho e quanto fica uma avaliação. Pode me ajudar?",
+            )}
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold rounded-lg transition-colors"
