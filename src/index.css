@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,33 +11,33 @@
 @layer base {
   :root {
     /* Warm cream background */
-    --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --background: 40 33% 98%;
+    --foreground: 215 50% 15%;
 
     /* Card with subtle warmth */
-    --card: 210 40% 98.0392%;
-    --card-foreground: 222 47% 11%;
+    --card: 40 30% 99%;
+    --card-foreground: 215 50% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 40 30% 99%;
+    --popover-foreground: 215 50% 15%;
 
     /* Deep navy blue - trust and professionalism */
-    --primary: 222 47.3684% 11.1765%;
-    --primary-foreground: 210 40% 98.0392%;
+    --primary: 215 60% 22%;
+    --primary-foreground: 40 33% 98%;
 
     /* Warm amber/gold - tradition and quality */
-    --secondary: 217 32.5843% 17.451%;
-    --secondary-foreground: 214 31.8182% 91.3725%;
+    --secondary: 38 85% 55%;
+    --secondary-foreground: 215 50% 15%;
 
     /* Muted warm tones */
-    --muted: 213 26.8293% 83.9216%;
-    --muted-foreground: 215 19.3182% 34.5098%;
+    --muted: 40 20% 94%;
+    --muted-foreground: 215 25% 45%;
 
     /* Accent gold for highlights */
-    --accent: 38 92.126% 50.1961%;
-    --accent-foreground: 222 47.3684% 11.1765%;
+    --accent: 38 75% 50%;
+    --accent-foreground: 215 50% 15%;
 
-    --destructive: 0 72.2222% 50.5882%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 40 20% 88%;
