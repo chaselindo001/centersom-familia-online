@@ -5,7 +5,7 @@ const Differentials = () => {
     {
       icon: Users,
       title: "Empresa Familiar",
-      description: "Atendimento pessoal e acolhedor. Aqui você é tratado como família, não como número.",
+      description: "Empresa familiar sólida, com atendimento acolhedor e foco em relacionamento de longo prazo.",
       highlight: true,
     },
     {
@@ -29,13 +29,13 @@ const Differentials = () => {
     {
       icon: Heart,
       title: "Atendimento Próximo",
-      description: "Conhecemos nossos clientes pelo nome. Construímos relacionamentos duradouros.",
+      description: "Atendimento próximo, com orientação clara e atenção aos detalhes em cada etapa.",
       highlight: true,
     },
     {
       icon: Shield,
       title: "Garantia nos Serviços",
-      description: "Todo serviço realizado possui garantia. Sua tranquilidade é nossa prioridade.",
+      description: "Todo serviço realizado possui garantia. A tranquilidade do cliente é prioridade.",
       highlight: false,
     },
   ];
@@ -46,10 +46,10 @@ const Differentials = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-sm font-semibold text-secondary uppercase tracking-wider mb-3">
-            Por que nos escolher
+            Por que escolher
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Nossos Diferenciais
+            Diferenciais
           </h2>
           <p className="text-lg text-muted-foreground">
             O que faz a Center Som Jr ser a escolha de tantas famílias em Matão há mais de 35 anos.
@@ -112,10 +112,9 @@ const Differentials = () => {
         <div className="mt-16 text-center">
           <div className="inline-block p-8 md:p-12 rounded-3xl bg-gradient-to-br from-primary/5 to-secondary/10 border border-border max-w-3xl">
             <blockquote className="font-display text-xl md:text-2xl text-foreground italic mb-4">
-              "Aqui na Center Som Jr, cada cliente que entra pela nossa porta se torna parte da nossa família. 
-              É assim que trabalhamos há mais de 35 anos."
+              "Na Center Som Jr, cada atendimento é conduzido com respeito e transparência — um padrão mantido há mais de 35 anos."
             </blockquote>
-            <p className="text-muted-foreground">— Família Center Som Jr</p>
+            <p className="text-muted-foreground">— Center Som Jr</p>
           </div>
         </div>
       </div>

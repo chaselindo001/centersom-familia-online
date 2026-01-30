@@ -1,14 +1,11 @@
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { buildWhatsAppUrl } from "@/lib/companyInfo";
-
-const DEFAULT_MESSAGE =
-  "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?";
+import { buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
 
 const WhatsAppFloatingButton = () => {
   return (
     <a
-      href={buildWhatsAppUrl(DEFAULT_MESSAGE)}
+      href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-5 right-5 z-50"
