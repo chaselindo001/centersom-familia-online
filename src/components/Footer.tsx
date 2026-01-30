@@ -1,5 +1,5 @@
 import { MapPin, Phone, Clock, Heart } from "lucide-react";
-import { COMPANY, buildWhatsAppUrl } from "@/lib/companyInfo";
+import { COMPANY, buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,9 +26,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a 
-                href={buildWhatsAppUrl(
-                  "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
-                )}
+                href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 hover:bg-secondary flex items-center justify-center transition-colors group"
@@ -47,7 +45,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { href: "#home", label: "Início" },
-                { href: "#sobre", label: "Sobre Nós" },
+                { href: "#sobre", label: "Sobre a empresa" },
                 { href: "#servicos", label: "Serviços" },
                 { href: "#antes-depois", label: "Antes e Depois" },
                 { href: "#diferenciais", label: "Diferenciais" },

@@ -10,7 +10,7 @@ import {
   CircuitBoard,
   Volume2
 } from "lucide-react";
-import { buildWhatsAppUrl } from "@/lib/companyInfo";
+import { buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
 
 const Services = () => {
   const electronicsServices = [
@@ -35,14 +35,14 @@ const Services = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-sm font-semibold text-secondary uppercase tracking-wider mb-3">
-            Nossos Serviços
+            Serviços
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Soluções completas para você
+            Soluções completas para clientes
           </h2>
           <p className="text-lg text-muted-foreground">
-            Trabalhamos com uma ampla variedade de equipamentos eletrônicos e serviços automotivos. 
-            Sempre com qualidade e garantia.
+            A Center Som Júnior atende uma ampla variedade de equipamentos eletrônicos e serviços automotivos,
+            com qualidade e garantia.
           </p>
         </div>
 
@@ -120,18 +120,15 @@ const Services = () => {
             Não encontrou o que procura?
           </h3>
           <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">
-            Entre em contato conosco! Trabalhamos com diversos outros equipamentos e 
-            podemos avaliar seu caso.
+            O atendimento pelo WhatsApp facilita o orçamento e a avaliação do aparelho.
           </p>
           <a 
-            href={buildWhatsAppUrl(
-              "Olá! Gostaria de saber se vocês atendem este aparelho e quanto fica uma avaliação. Pode me ajudar?",
-            )}
+            href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3 bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold rounded-lg transition-colors"
           >
-            Consulte-nos pelo WhatsApp
+            Consultar pelo WhatsApp
           </a>
         </div>
       </div>

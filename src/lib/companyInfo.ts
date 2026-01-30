@@ -11,9 +11,12 @@ export const COMPANY = {
   },
   address: {
     street: "Rua Sinharinha Frota, 2115",
-    districtCityState: "Jardim Buscardi, Matão - SP",
+    districtCityState: "Bairro Buscardi, Matão - SP",
   },
 } as const;
+
+export const DEFAULT_WHATSAPP_MESSAGE =
+  "Olá! Vim pelo site da Center Som Júnior e gostaria de um orçamento.";
 
 export function buildWhatsAppUrl(message?: string) {
   const base = `https://wa.me/${COMPANY.phones.whatsappWaMe}`;

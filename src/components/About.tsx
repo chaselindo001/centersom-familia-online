@@ -5,12 +5,12 @@ const About = () => {
     {
       icon: Heart,
       title: "Paixão pelo Ofício",
-      description: "Cada reparo é feito com dedicação e cuidado, como se fosse para nossa própria família.",
+      description: "Cada reparo é realizado com dedicação e cuidado, com foco em qualidade e segurança.",
     },
     {
       icon: Users,
-      title: "União Familiar",
-      description: "Pai, mãe, tio e irmão trabalham juntos, unindo gerações de conhecimento e experiência.",
+      title: "Estrutura Familiar",
+      description: "Empresa familiar sólida, com continuidade entre gerações e apoio de profissionais contratados.",
     },
     {
       icon: Award,
@@ -20,7 +20,7 @@ const About = () => {
     {
       icon: Handshake,
       title: "Confiança",
-      description: "Serviço honesto e transparente. Nossos clientes voltam e nos indicam.",
+      description: "Atendimento honesto e transparente. A reputação é construída por indicações e retorno de clientes.",
     },
   ];
 
@@ -30,7 +30,7 @@ const About = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block text-sm font-semibold text-secondary uppercase tracking-wider mb-3">
-            Sobre Nós
+            Sobre a empresa
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Uma história de família e dedicação
@@ -62,19 +62,17 @@ const About = () => {
           {/* Story Text */}
           <div className="space-y-6">
             <p className="text-lg text-foreground leading-relaxed">
-              A <strong className="text-primary">Center Som Jr</strong> é mais do que uma loja de consertos — 
-              é uma tradição familiar. Começamos como uma pequena oficina e, ao longo dos anos, 
-              crescemos junto com nossa comunidade.
+              A <strong className="text-primary">Center Som Jr</strong> é uma empresa familiar com tradição e foco em assistência técnica.
+              Fundada com valores tradicionais, mantém um padrão de atendimento técnico e honesto construído ao longo de décadas.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Hoje, pai, mãe, tio e irmão trabalham lado a lado, cada um contribuindo com 
-              suas habilidades únicas. Essa união familiar se reflete no atendimento que 
-              oferecemos: próximo, honesto e dedicado.
+              A propriedade permanece com a fundadora original (matriarca), e a continuidade do trabalho é garantida por uma equipe
+              que une gerações: dois irmãos experientes na área técnica e dois netos que trazem dinamismo à operação.
+              Complementando esse núcleo, a empresa conta com colaboradores contratados e qualificados.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Nosso compromisso sempre foi e sempre será entregar um serviço de qualidade, 
-              com preços justos e a atenção que cada cliente merece. Quando você traz seu 
-              aparelho para nós, pode ter certeza de que será tratado como se fosse nosso.
+              O compromisso é oferecer serviço de qualidade, com preços justos e diagnóstico claro antes de qualquer reparo.
+              Cada aparelho é tratado com atenção e responsabilidade, do recebimento à entrega.
             </p>
             <div className="pt-4">
               <div className="flex items-center gap-4 text-sm">

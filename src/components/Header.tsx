@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { buildWhatsAppUrl } from "@/lib/companyInfo";
+import { buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { href: "#home", label: "Início" },
-    { href: "#sobre", label: "Sobre Nós" },
+    { href: "#sobre", label: "Sobre a empresa" },
     { href: "#servicos", label: "Serviços" },
     { href: "#antes-depois", label: "Antes e Depois" },
     { href: "#diferenciais", label: "Diferenciais" },
@@ -59,15 +59,13 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href={buildWhatsAppUrl(
-                "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
-              )}
+              href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
               target="_blank" 
               rel="noopener noreferrer"
             >
               <Button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2">
                 <Phone className="w-4 h-4" />
-                Fale Conosco
+                Fale pelo WhatsApp
               </Button>
             </a>
           </div>
@@ -98,16 +96,14 @@ const Header = () => {
               </a>
             ))}
             <a 
-              href={buildWhatsAppUrl(
-                "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
-              )}
+              href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
               target="_blank" 
               rel="noopener noreferrer"
               className="mt-2"
             >
               <Button className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2">
                 <Phone className="w-4 h-4" />
-                Fale Conosco
+                Fale pelo WhatsApp
               </Button>
             </a>
           </nav>

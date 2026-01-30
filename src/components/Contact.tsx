@@ -1,6 +1,6 @@
-import { MapPin, Phone, Clock, MessageCircle, Mail } from "lucide-react";
+import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { COMPANY, buildWhatsAppUrl } from "@/lib/companyInfo";
+import { COMPANY, buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
 
 const Contact = () => {
   const contactInfo = [
@@ -39,11 +39,11 @@ const Contact = () => {
             Contato
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Venha nos visitar
+            Visita e contato
           </h2>
           <p className="text-lg text-muted-foreground">
-            Estamos localizados no Jardim Buscardi, em Matão-SP. 
-            Venha conhecer nossa loja ou entre em contato pelo WhatsApp.
+            A Center Som Júnior está localizada no Bairro Buscardi, em Matão-SP.
+            O contato pode ser feito pelo WhatsApp ou telefone fixo.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
           <div className="order-2 lg:order-1">
             <div className="rounded-2xl overflow-hidden shadow-card h-[400px] lg:h-full min-h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8!2d-48.36!3d-21.60!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDM2JzAwLjAiUyA0OMKwMjEnMzYuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                src="https://www.google.com/maps?q=Rua%20Sinharinha%20Frota%2C%202115%2C%20Bairro%20Buscardi%2C%20Mat%C3%A3o%20-%20SP&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -89,9 +89,7 @@ const Contact = () => {
             {/* CTA Buttons */}
             <div className="space-y-4 pt-4">
               <a 
-                href={buildWhatsAppUrl(
-                  "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
-                )}
+                href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block"
@@ -124,7 +122,7 @@ const Contact = () => {
             <div className="p-6 rounded-2xl bg-secondary/10 border border-secondary/20">
               <p className="text-sm text-foreground">
                 <strong>Dica:</strong> Tire uma foto do problema/aparelho e envie pelo WhatsApp.
-                Isso ajuda a gente a orientar melhor antes da visita.
+                Isso ajuda a equipe a orientar melhor antes da visita.
               </p>
             </div>
           </div>

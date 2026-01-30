@@ -36,7 +36,7 @@ function PlaceholderFrame({ label }: { label: "Antes" | "Depois" }) {
         </div>
         <div>
           <p className="font-display font-semibold text-foreground">{label}</p>
-          <p className="text-sm text-muted-foreground">Envie uma foto para substituir</p>
+          <p className="text-sm text-muted-foreground">Adicione uma foto para substituir</p>
         </div>
       </div>
       <div className="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-background/80 backdrop-blur px-3 py-1 border border-border">
@@ -60,8 +60,8 @@ const BeforeAfter = () => {
             Antes e Depois
           </h2>
           <p className="text-lg text-muted-foreground">
-            Uma prévia visual do nosso cuidado com os detalhes. Assim que você nos enviar fotos pareadas,
-            trocamos esses exemplos pelos seus casos reais.
+            Uma prévia visual do cuidado com os detalhes. Assim que houver fotos pareadas de casos reais,
+            estes exemplos serão substituídos.
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import { Phone, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-storefront.jpg";
-import { COMPANY, buildWhatsAppUrl } from "@/lib/companyInfo";
+import { COMPANY, buildWhatsAppUrl, DEFAULT_WHATSAPP_MESSAGE } from "@/lib/companyInfo";
 
 const Hero = () => {
   return (
@@ -41,9 +41,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <a
-              href={buildWhatsAppUrl(
-                "Olá! Gostaria de um orçamento/avaliação para conserto (TV, som automotivo ou eletrônicos). Pode me ajudar?",
-              )}
+              href={buildWhatsAppUrl(DEFAULT_WHATSAPP_MESSAGE)}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -67,7 +65,7 @@ const Hero = () => {
               </div>
               <div>
                 <p className="text-sm font-medium text-primary-foreground">Matão - SP</p>
-                <p className="text-xs text-primary-foreground/60">Jd. Buscardi</p>
+                <p className="text-xs text-primary-foreground/60">Bairro Buscardi</p>
               </div>
             </div>
             <div className="flex items-center gap-3 text-primary-foreground/80">
