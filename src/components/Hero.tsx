@@ -8,11 +8,7 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt={`Fachada da ${COMPANY.name} em Matão`} 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt={`Fachada da ${COMPANY.name} em Matão`} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/90 to-primary/75" />
       </div>
 
@@ -28,25 +24,30 @@ const Hero = () => {
           </div>
 
           {/* Título Principal Otimizado para SEO e Conversão */}
-          <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Conserto de TV e Som em Matão com 
+          <h1
+            className="font-display text-4xl md:text-5xl lg:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Conserto de TV e Som em Matão com
             <span className="block text-secondary">35 anos de tradição</span>
           </h1>
 
           {/* Descrição Focada em Resolver a Dor do Cliente */}
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Não deixe seu lazer parado. Na <strong>{COMPANY.name}</strong>, recuperamos seu televisor e sistema de som com peças de qualidade e a garantia de quem é especialista no que faz.
+          <p
+            className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-in"
+            style={{ animationDelay: "0.2s" }}
+          >
+            Não deixe seu lazer parado. Na <strong>{COMPANY.name}</strong>, recuperamos seu televisor e sistema de som
+            com peças de qualidade e a garantia de quem é especialista no que faz.
           </p>
 
           {/* Botões de Ação */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto"
-            >
-              <Button size="lg" className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2 text-lg px-10 py-7 shadow-xl hover:scale-105 transition-all">
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto bg-secondary hover:bg-secondary/90 text-secondary-foreground gap-2 text-lg px-10 py-7 shadow-xl hover:scale-105 transition-all"
+              >
                 <Phone className="w-5 h-5" />
                 Orçamento via WhatsApp
               </Button>
@@ -64,7 +65,10 @@ const Hero = () => {
           </div>
 
           {/* Quick Info - Horários Corrigidos */}
-          <div className="grid sm:grid-cols-3 gap-6 animate-fade-in border-t border-primary-foreground/10 pt-8" style={{ animationDelay: "0.4s" }}>
+          <div
+            className="grid sm:grid-cols-3 gap-6 animate-fade-in border-t border-primary-foreground/10 pt-8"
+            style={{ animationDelay: "0.4s" }}
+          >
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-xl bg-primary-foreground/10 flex items-center justify-center">
                 <MapPin className="w-6 h-6 text-secondary" />
@@ -74,7 +78,7 @@ const Hero = () => {
                 <p className="text-xs text-primary-foreground/70 uppercase tracking-wider">Bairro Buscardi, Matão</p>
               </div>
             </div>
-            
+
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 rounded-xl bg-primary-foreground/10 flex items-center justify-center">
                 <Clock className="w-6 h-6 text-secondary" />
@@ -94,7 +98,9 @@ const Hero = () => {
               </div>
               <div>
                 <p className="text-sm font-bold text-primary-foreground">Telefone</p>
-                <p className="text-xs text-primary-foreground/70 uppercase tracking-wider">{COMPANY.phones.whatsappLabel}</p>
+                <p className="text-xs text-primary-foreground/70 uppercase tracking-wider">
+                  {COMPANY.phones.whatsappLabel}
+                </p>
               </div>
             </div>
           </div>
