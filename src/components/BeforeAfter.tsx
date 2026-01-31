@@ -11,7 +11,6 @@ import tvAntes from "@/assets/tv-antes-real.png";
 import tvDepois from "@/assets/tv-depois-real.png";
 
 import { BeforeAfterCompare } from "@/components/before-after/BeforeAfterCompare";
-import { PlaceholderFrame } from "@/components/before-after/PlaceholderFrame";
 
 type PlaceholderCase = {
   title: string;
@@ -27,21 +26,13 @@ type PlaceholderCase = {
 const cases: PlaceholderCase[] = [
   {
     title: "Televisor",
-    subtitle: "Comparação real: arraste para ver o antes e depois.",
+    subtitle: "Arraste para comparar o antes e depois.",
     beforeImage: tvAntes,
     afterImage: tvDepois,
     beforeAlt: "Televisor com defeito (antes do conserto)",
     afterAlt: "Televisor consertado e funcionando (depois do conserto)",
     beforeLabel: "ANTES – TV com defeito",
     afterLabel: "DEPOIS – TV consertada",
-  },
-  {
-    title: "Som automotivo",
-    subtitle: "Exemplo de reparo (substitua pelas suas fotos)",
-  },
-  {
-    title: "Aparelho de áudio/vídeo",
-    subtitle: "Exemplo de reparo (substitua pelas suas fotos)",
   },
 ];
 
@@ -52,14 +43,13 @@ const BeforeAfter = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <span className="inline-block text-sm font-semibold text-secondary uppercase tracking-wider mb-3">
-            Qualidade na prática
+            Assistência técnica com padrão
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Antes e Depois
+            Nossos Resultados
           </h2>
           <p className="text-lg text-muted-foreground">
-            Uma prévia visual do cuidado com os detalhes. Assim que houver fotos pareadas de casos reais,
-            estes exemplos serão substituídos.
+            Arraste para ver a transformação real em televisores e aparelhos de som que passaram por nossa assistência.
           </p>
         </div>
 
@@ -74,8 +64,9 @@ const BeforeAfter = () => {
                         <h3 className="font-display text-2xl font-bold text-foreground">{item.title}</h3>
                         <p className="text-sm text-muted-foreground">{item.subtitle}</p>
                       </div>
-                      <div className="text-xs text-muted-foreground">
-                        Dica: use fotos na mesma posição para um antes/depois mais forte.
+                      <div className="inline-flex items-center gap-2 rounded-full bg-muted px-3 py-1 border border-border">
+                        <Wrench className="h-4 w-4 text-primary" />
+                        <span className="text-xs font-medium text-foreground">Antes → Depois</span>
                       </div>
                     </div>
 
@@ -92,10 +83,7 @@ const BeforeAfter = () => {
                           />
                         </div>
                       ) : (
-                        <>
-                          <PlaceholderFrame label="Antes" />
-                          <PlaceholderFrame label="Depois" />
-                        </>
+                        null
                       )}
                     </div>
                   </div>
@@ -105,10 +93,6 @@ const BeforeAfter = () => {
             <CarouselPrevious className="hidden md:inline-flex" />
             <CarouselNext className="hidden md:inline-flex" />
           </Carousel>
-
-          <div className="mt-6 flex items-center justify-center gap-3 md:hidden">
-            <p className="text-sm text-muted-foreground">Deslize para ver mais</p>
-          </div>
         </div>
       </div>
     </section>
