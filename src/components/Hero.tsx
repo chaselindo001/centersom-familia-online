@@ -56,7 +56,7 @@ const Hero = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full sm:w-auto border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-7"
+                className="w-full sm:w-auto border-2 border-primary-foreground/85 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/15 text-lg px-8 py-7"
               >
                 Ver Especialidades
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -86,8 +86,8 @@ const Hero = () => {
               <div>
                 <p className="text-sm font-bold text-primary-foreground">Horário</p>
                 <div className="text-[10px] md:text-xs text-primary-foreground/70 uppercase tracking-wider leading-tight">
-                  <p>Seg a Sex: 8h às 18h</p>
-                  <p>Sábado: 8h às 12h</p>
+                  <p>Segunda a Sexta das 08:00 às 18:00</p>
+                  <p>Sábado das 08:00 às 12:00</p>
                 </div>
               </div>
             </div>
